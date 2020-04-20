@@ -72,6 +72,7 @@ There is an alternative to using straight-up objects, which might be simpler in 
 The same rules apply for `MessageEmbed` as does normal ones. In fact, the builder is just a shortcut to get the same object and offers no more, no less functionality. Here is a similar example to the one above, using the `MessageEmbed`. It also has a nice fancy image, to boot!
 
 ```javascript
+
 const embed = new Discord.MessageEmbed()
   .setTitle("This is your title, it can hold 256 characters")
   .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
@@ -100,7 +101,7 @@ const embed = new Discord.MessageEmbed()
   .addBlankField(true)
   .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
  
-  message.channel.send({embed});
+  message.channel.send(embed);
 ```
 
 Which produces the following:
